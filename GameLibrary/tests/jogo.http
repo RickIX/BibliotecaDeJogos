@@ -1,0 +1,49 @@
+### Criar Jogo
+POST https://localhost:7143/jogo/criar
+Content-Type: application/json
+
+{
+    "NomeJogo": "Red Dead Redemption",
+    "Genero": "Acao"  
+}
+
+### Listar Jogos
+GET https://localhost:7143/jogo/listar
+
+### Atualizar Detalhes do Jogo ###
+PUT https://localhost:7143/jogo/atualizar/4
+Content-Type: application/json
+
+{
+    "NomeJogo": "Portal 2",
+    "Genero": "Aventura"
+}
+
+### Remover Jogo ###
+DELETE https://localhost:7143/jogo/remover/5
+
+### Recomendar Jogo
+GET https://localhost:7143/jogo/recomendar?genero=Casual
+
+# public enum GeneroJogo
+#     {
+#     Acao,
+#     Aventura,
+#     Estrategia,
+#     RPG,
+#     Esportes,
+#     Terror,
+#     Outro,
+#     Corrida,
+#     Simulacao,
+#     Plataforma,
+#     QuebraCabeca,
+#     Luta,
+#     Musica,
+#     Casual,
+#     Educacional,
+#     Cartas,
+#     EsporteEletronico,
+#     Sobrevivencia,
+#     FPS
+#     }

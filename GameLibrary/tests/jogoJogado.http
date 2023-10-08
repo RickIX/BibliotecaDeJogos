@@ -1,0 +1,26 @@
+###
+POST https://localhost:7143/jogosjogados/registrar
+Content-Type: application/json
+
+{
+    "JogadorId": 2,  
+    "JogoId": 4  
+}
+
+### Listar
+GET https://localhost:7143/jogosjogados/listar
+
+###
+PUT https://localhost:7143/jogosjogados/atualizar/1
+Content-Type: application/json
+
+{
+    "JogadorId": 1,  
+    "JogoId": 2 
+}
+
+### Remover 
+DELETE https://localhost:7143/jogosjogados/remover/2/4
+
+
+

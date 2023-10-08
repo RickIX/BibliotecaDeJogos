@@ -1,0 +1,27 @@
+### Registrar Jogador
+POST https://localhost:7143/jogador/registrarJogador
+Content-Type: application/json
+
+{
+    "NomeJogador": "Matias",
+    "Senha": "1223",
+    "Email": "email@exemplo.com"
+}
+
+### Listar Jogadores
+GET https://localhost:7143/jogador/listar
+
+### Atualizar Jogador
+PUT https://localhost:7143/jogador/atualizarPerfil/1
+Content-Type: application/json
+
+{
+    "NomeJogador": "Marcio Donato",
+    "Senha": "17865",
+    "Email": "novo_email@exemplo.com"
+}
+
+### Deleter Jogador
+DELETE https://localhost:7143/jogador/deletar/3
+
+
